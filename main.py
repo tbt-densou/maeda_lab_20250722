@@ -165,7 +165,7 @@ def main():
 
     # 学習設定：最大エポック数、Early Stopping の待機エポック数
     n_epochs = 50
-    patience = 10  # 改善が見られない場合に学習を打ち切るまでのエポック数
+    patience = 3  # 改善が見られない場合に学習を打ち切るまでのエポック数
     best_accuracy = 0  # 最良のテスト精度
     wait = 0  # 精度が更新されなかったエポック数カウント
     history = defaultdict(list)  # 学習履歴（損失・精度）を記録する辞書
